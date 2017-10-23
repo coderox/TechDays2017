@@ -148,6 +148,12 @@
   <ItemGroup>
     <Folder Include="Views\DeviceFamily-Mobile\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{c0c881f4-054b-4bea-998d-6225d7933a05}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
