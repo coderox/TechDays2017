@@ -39,6 +39,10 @@ namespace ResponsiveDesign
         {
             switch (page)
             {
+                case "home":
+                    ContentFrame.Navigate(typeof(Rearchitect));
+                    break;
+
                 case "reposition":
                     ContentFrame.Navigate(typeof(Reposition));
                     break;
@@ -59,8 +63,8 @@ namespace ResponsiveDesign
                     ContentFrame.Navigate(typeof(Reveal));
                     break;
 
-                case "rearchitecture":
-                    ContentFrame.Navigate(typeof(Rearchitecture));
+                case "rearchitect":
+                    ContentFrame.Navigate(typeof(Rearchitect));
                     break;
             }
         }
