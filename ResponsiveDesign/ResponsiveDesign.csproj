@@ -120,6 +120,12 @@
     <Compile Include="Views\Reveal.xaml.cs">
       <DependentUpon>Reveal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\OurCustomControl.xaml.cs">
+      <DependentUpon>OurCustomControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\OurCustomMobileControl.xaml.cs">
+      <DependentUpon>OurCustomMobileControl.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -167,6 +173,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Reveal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\OurCustomControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\OurCustomMobileControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

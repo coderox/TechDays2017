@@ -5,9 +5,40 @@
     xmlns:local="using:ResponsiveDesign.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControls="using:ResponsiveDesign.Views.UserControls"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+
+                <VisualState x:Name="small">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ourCustomMobileControl.Visibility" Value="Visible"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="medium">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource mediumMinWidth}"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ourCustomControl.Visibility" Value="Visible"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <userControls:OurCustomMobileControl x:Name="ourCustomMobileControl" Visibility="Collapsed" />
+
+        <userControls:OurCustomControl x:Name="ourCustomControl" Visibility="Collapsed" />
+       
+        <!--x:DeferLoadStrategy="Lazy"-->
+        
     </Grid>
 </Page>

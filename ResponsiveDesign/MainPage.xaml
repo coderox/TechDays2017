@@ -23,7 +23,7 @@
 
                 <VisualState x:Name="medium">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="641"/>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource mediumMinWidth}"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="ContentFrame.Padding" Value="24,0"/>
@@ -32,7 +32,7 @@
 
                 <VisualState x:Name="large">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1008"/>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource largeMinWidth}"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="ContentFrame.Padding" Value="24,0"/>
