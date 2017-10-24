@@ -11,9 +11,9 @@
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:Name="desktop">
+                <VisualState x:Name="medium">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="600"/>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource mediumMinWidth}"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="rectangle.(Grid.Row)" Value="0"/>
@@ -21,6 +21,19 @@
 
                         <Setter Target="rectangle.(Grid.Column)" Value="2"/>
                         <Setter Target="rectangle.(Grid.ColumnSpan)" Value="1"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="large">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource largeMinWidth}"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="rectangle.(Grid.Row)" Value="0"/>
+                        <Setter Target="rectangle.(Grid.RowSpan)" Value="3"/>
+
+                        <Setter Target="rectangle.(Grid.Column)" Value="1"/>
+                        <Setter Target="rectangle.(Grid.ColumnSpan)" Value="2"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -38,7 +51,7 @@
         </Grid.ColumnDefinitions>
 
         <Rectangle x:Name="rectangle" Fill="LightGray"
-                   Margin="10"
+                   Margin="0,12"
                    Grid.Row="2" Grid.RowSpan="1"                    
                    Grid.Column="0" Grid.ColumnSpan="3"/>
 

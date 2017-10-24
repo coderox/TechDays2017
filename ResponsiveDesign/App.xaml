@@ -6,6 +6,10 @@
     RequestedTheme="Light">
 
     <Application.Resources>
+
+        <x:Double x:Key="mediumMinWidth">641</x:Double>
+        <x:Double x:Key="largeMinWidth">1008</x:Double>
+
         <x:String x:Key="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum orci eu nunc suscipit molestie. Aliquam quis odio dolor. Suspendisse potenti. Duis eu lacus ullamcorper risus ullamcorper consequat non vel est. Sed viverra, nisi eu vestibulum malesuada, sem arcu tristique mauris, in commodo tellus massa sit amet lacus. Praesent bibendum lorem at nibh commodo hendrerit. Duis faucibus nibh eu felis gravida, at aliquam purus sollicitudin. Aliquam et dictum eros. Donec a tincidunt urna, vel congue purus. Phasellus ornare risus sit amet eros molestie dignissim. Nam placerat tellus ac purus porta, eget eleifend risus semper. Phasellus vel augue vel elit maximus vestibulum. Nam tortor velit, feugiat eget sem vel, aliquet semper turpis. Nulla libero nisi, venenatis at risus efficitur, ullamcorper cursus massa. 
 Donec dignissim consectetur turpis et vulputate. Pellentesque erat tortor, mattis eget nisi et, consectetur cursus felis. Morbi fringilla nisl vitae justo eleifend, a fringilla nibh interdum. Vivamus gravida lectus et dolor maximus, sed euismod erat rhoncus. Vestibulum nec pulvinar lorem. Integer fermentum posuere lacus sit amet aliquet. Morbi at nunc ullamcorper, sodales lacus ac, auctor sem. Ut ut nisl id quam rutrum gravida quis non nibh. Fusce ac lectus vel ipsum auctor eleifend. 
 Suspendisse volutpat vitae sem eget faucibus. Maecenas dapibus, justo porta semper imperdiet, dui sapien mattis ante, sed pharetra mauris dolor id erat. Nullam a ipsum enim. Quisque volutpat ultrices velit. Donec mattis orci quis turpis cursus, vel blandit neque porta. Quisque rhoncus luctus augue, nec tincidunt ex consectetur in. Cras non diam ultricies, commodo ex at, eleifend arcu. 

@@ -98,12 +98,27 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\SimpleItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\VariableSizedGridView.cs" />
+    <Compile Include="ViewModels\ItemsViewModel.cs" />
+    <Compile Include="Views\Rearchitecture.xaml.cs">
+      <DependentUpon>Rearchitecture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reflow.xaml.cs">
+      <DependentUpon>Reflow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Replace.xaml.cs">
+      <DependentUpon>Replace.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Reposition.xaml.cs">
       <DependentUpon>Reposition.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Resize.xaml.cs">
       <DependentUpon>Resize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reveal.xaml.cs">
+      <DependentUpon>Reveal.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -131,11 +146,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Rearchitecture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Reflow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Replace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Reposition.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Resize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Reveal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,12 +178,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DeviceFamily-Mobile\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Library\Library.csproj">
-      <Project>{c0c881f4-054b-4bea-998d-6225d7933a05}</Project>
-      <Name>Library</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
