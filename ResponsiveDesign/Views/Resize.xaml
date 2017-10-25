@@ -7,10 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="mainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <TextBlock Text="{StaticResource loremIpsum}" 
                    TextAlignment="Justify"
                    TextWrapping="WrapWholeWords"/>
-    </Grid>
+    </ScrollViewer>
 </Page>
